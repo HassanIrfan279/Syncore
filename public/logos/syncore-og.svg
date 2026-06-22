@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="Syncore AI-powered growth agency preview image">
+  <rect width="1200" height="630" fill="#212121"/>
+  <circle cx="210" cy="160" r="220" fill="#00BCD4" opacity=".24"/>
+  <circle cx="970" cy="155" r="260" fill="#B04AE2" opacity=".22"/>
+  <circle cx="700" cy="510" r="280" fill="#6A1B9A" opacity=".22"/>
+  <path d="M0 520h1200" stroke="#FFFFFF" stroke-opacity=".08"/>
+  <path d="M0 430h1200" stroke="#FFFFFF" stroke-opacity=".06"/>
+  <path d="M0 340h1200" stroke="#FFFFFF" stroke-opacity=".05"/>
+  <path d="M170 364c44 54 194 61 265 5 57-45 29-112-49-130l-102-24c-38-9-49-34-24-53 35-27 121-14 166 25" fill="none" stroke="#00BCD4" stroke-width="18" stroke-linecap="round"/>
+  <path d="M173 367c48 43 179 52 242 1 53-43 26-99-43-116l-92-22c-38-9-49-34-24-53 35-27 121-14 166 25" fill="none" stroke="#B04AE2" stroke-width="9" stroke-linecap="round"/>
+  <text x="560" y="274" fill="#FFFFFF" font-family="Inter, Arial, sans-serif" font-size="84" font-weight="800">Syncore</text>
+  <text x="565" y="340" fill="#00BCD4" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="800" letter-spacing="2">AI-Powered Growth Agency</text>
+  <text x="565" y="402" fill="#FFFFFF" fill-opacity=".72" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="500">AI automation, smart websites, content and ads.</text>
+</svg>
