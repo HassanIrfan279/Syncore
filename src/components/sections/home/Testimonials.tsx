@@ -4,8 +4,7 @@ import { testimonials } from "@/lib/site";
 const visibleTestimonials = testimonials.filter(
   (testimonial) =>
     testimonial.quote.trim() &&
-    testimonial.author.trim() &&
-    !testimonial.quote.toLowerCase().includes("placeholder"),
+    testimonial.author.trim(),
 );
 
 export function Testimonials() {

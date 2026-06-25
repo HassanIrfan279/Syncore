@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
+import Image from "next/image";
 import { X } from "lucide-react";
 import { workContent, type WorkProject } from "@/lib/site";
 
@@ -37,17 +38,17 @@ export function CaseStudyModal({ project, onClose }: CaseStudyModalProps) {
 
   return (
     <div
-      className="fixed inset-0 z-[70] overflow-y-auto bg-brand-charcoal/78 px-4 py-6 backdrop-blur-xl"
+      className="fixed inset-0 z-[70] overflow-y-auto bg-brand-charcoal/78 px-3 py-4 backdrop-blur-xl sm:px-4 sm:py-6"
       role="dialog"
       aria-modal="true"
       aria-labelledby="case-study-title"
       onMouseDown={onClose}
     >
       <div
-        className="mx-auto w-full max-w-5xl overflow-hidden rounded-[1.5rem] border border-white/12 bg-brand-white shadow-2xl"
+        className="mx-auto w-full max-w-5xl overflow-hidden rounded-[1.1rem] border border-white/12 bg-brand-white shadow-2xl sm:rounded-[1.5rem]"
         onMouseDown={(event) => event.stopPropagation()}
       >
-        <div className="relative overflow-hidden bg-brand-charcoal p-6 text-brand-white sm:p-8">
+        <div className="relative overflow-hidden bg-brand-charcoal p-5 text-brand-white sm:p-8">
           <div
             className="absolute inset-0 bg-[radial-gradient(circle_at_16%_18%,rgb(0_188_212/0.24),transparent_18rem),radial-gradient(circle_at_82%_24%,rgb(176_74_226/0.22),transparent_20rem),linear-gradient(rgb(255_255_255/0.04)_1px,transparent_1px),linear-gradient(90deg,rgb(255_255_255/0.04)_1px,transparent_1px)] bg-[length:auto,auto,3.5rem_3.5rem,3.5rem_3.5rem]"
             aria-hidden="true"
@@ -60,7 +61,7 @@ export function CaseStudyModal({ project, onClose }: CaseStudyModalProps) {
               </p>
               <h2
                 id="case-study-title"
-                className="mt-4 max-w-2xl font-heading text-4xl font-extrabold leading-tight text-brand-white"
+                className="mt-4 max-w-2xl font-heading text-3xl font-extrabold leading-tight text-brand-white sm:text-4xl"
               >
                 {project.title}
               </h2>
@@ -78,21 +79,30 @@ export function CaseStudyModal({ project, onClose }: CaseStudyModalProps) {
           </div>
         </div>
 
-        <div className="grid gap-8 p-6 sm:p-8 lg:grid-cols-[0.9fr_1.1fr]">
+        <div className="grid gap-6 p-4 sm:gap-8 sm:p-8 lg:grid-cols-[0.9fr_1.1fr]">
           <div
-            className="premium-thumbnail relative min-h-72 overflow-hidden rounded-[1.25rem]"
+            className="premium-thumbnail relative min-h-60 overflow-hidden rounded-[1rem] sm:min-h-72 sm:rounded-[1.25rem]"
             role="img"
-            aria-label={`${project.title} case study visual placeholder showing ${project.visualLabel}`}
+            aria-label={`${project.title} case study visual showing ${project.visualLabel}`}
           >
+            {project.visualSrc ? (
+              <Image
+                src={project.visualSrc}
+                alt=""
+                fill
+                sizes="(min-width: 1024px) 45vw, 100vw"
+                className="absolute inset-0 h-full w-full object-cover object-center"
+              />
+            ) : null}
             <div
               className="absolute inset-0 bg-[radial-gradient(circle_at_30%_25%,rgb(255_255_255/0.32),transparent_11rem),radial-gradient(circle_at_78%_76%,rgb(255_255_255/0.18),transparent_12rem),linear-gradient(135deg,transparent_0_42%,rgb(255_255_255/0.18)_42.2%_42.8%,transparent_43%_100%)]"
               aria-hidden="true"
             />
-            <div className="absolute inset-x-6 bottom-6 rounded-2xl border border-white/18 bg-white/12 p-5 text-brand-white backdrop-blur">
+            <div className="absolute inset-x-4 bottom-4 rounded-2xl border border-white/18 bg-white/12 p-4 text-brand-white backdrop-blur sm:inset-x-6 sm:bottom-6 sm:p-5">
               <p className="font-heading text-sm font-extrabold uppercase tracking-[0.14em] text-brand-white/72">
                 {workContent.visualsEyebrow}
               </p>
-              <p className="mt-2 font-heading text-2xl font-extrabold">
+              <p className="mt-2 font-heading text-xl font-extrabold sm:text-2xl">
                 {project.visualLabel}
               </p>
             </div>
@@ -116,6 +126,58 @@ export function CaseStudyModal({ project, onClose }: CaseStudyModalProps) {
             ))}
           </div>
         </div>
+
+        {project.gallery?.length ? (
+          <section className="border-t border-brand-border bg-brand-surface px-4 py-6 sm:px-8 sm:py-8">
+            <div className="flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
+              <div>
+                <p className="font-heading text-sm font-extrabold uppercase tracking-[0.14em] text-brand-indigo">
+                  Image assets
+                </p>
+                <h3 className="mt-2 text-2xl">Case study visuals</h3>
+              </div>
+              <p className="max-w-xl text-sm leading-6 text-brand-muted">
+                Branded portfolio assets prepared for the restaurant case study.
+              </p>
+            </div>
+
+            <div className="mt-6 grid gap-4 md:grid-cols-2">
+              {project.gallery.map((image, index) => (
+                <figure
+                  key={image.src}
+                  className={`overflow-hidden rounded-[1rem] border border-brand-border bg-brand-white shadow-sm ${
+                    index === 0 || index === 3 ? "md:col-span-2" : ""
+                  }`}
+                >
+                  <div
+                    className={`relative bg-brand-charcoal ${
+                      index === 3
+                        ? "aspect-[1.34]"
+                        : index === 2
+                          ? "aspect-[0.92] md:aspect-[1.05]"
+                          : "aspect-square"
+                    }`}
+                  >
+                    <Image
+                      src={image.src}
+                      alt={image.alt}
+                      fill
+                      sizes={
+                        index === 0 || index === 3
+                          ? "(min-width: 1024px) 896px, 100vw"
+                          : "(min-width: 768px) 50vw, 100vw"
+                      }
+                      className="object-cover"
+                    />
+                  </div>
+                  <figcaption className="border-t border-brand-border px-4 py-3 font-heading text-sm font-extrabold text-brand-charcoal">
+                    IMG {String(index + 1).padStart(2, "0")} - {image.label}
+                  </figcaption>
+                </figure>
+              ))}
+            </div>
+          </section>
+        ) : null}
       </div>
     </div>
   );

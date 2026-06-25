@@ -2,12 +2,9 @@
 
 import Link from "next/link";
 import type { ComponentProps } from "react";
-import {
-  trackBookCallClick,
-  trackWhatsAppClick,
-} from "@/lib/analytics";
+import { trackWhatsAppClick } from "@/lib/analytics";
 
-type TrackingType = "book-call" | "whatsapp";
+type TrackingType = "whatsapp";
 
 type TrackedLinkProps = ComponentProps<typeof Link> & {
   tracking: TrackingType;
@@ -23,10 +20,6 @@ export function TrackedLink({
   const handleClick: NonNullable<ComponentProps<typeof Link>["onClick"]> = (
     event,
   ) => {
-    if (tracking === "book-call") {
-      trackBookCallClick({ location: trackingLocation });
-    }
-
     if (tracking === "whatsapp") {
       trackWhatsAppClick({ location: trackingLocation });
     }

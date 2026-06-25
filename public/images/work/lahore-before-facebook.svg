@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Before Facebook page screenshot mockup</title>
+  <desc id="desc">A stale Facebook page mockup with old branding, low follower count and no booking link.</desc>
+  <rect width="1200" height="800" fill="#eef2f7"/>
+  <rect x="0" y="0" width="1200" height="84" fill="#1877f2"/>
+  <text x="88" y="54" fill="#fff" font-family="Arial,sans-serif" font-size="34" font-weight="900">facebook</text>
+  <rect x="60" y="112" width="1080" height="628" rx="18" fill="#fff" stroke="#d8dee8"/>
+  <rect x="60" y="112" width="1080" height="270" rx="18" fill="#c7cdd6"/>
+  <path d="M60 330h1080v52H60z" fill="#fff"/>
+  <circle cx="165" cy="340" r="92" fill="#2b211b" stroke="#fff" stroke-width="8"/>
+  <text x="165" y="340" text-anchor="middle" fill="#f8a51d" font-family="Georgia,serif" font-size="22" font-weight="700">Lahore</text>
+  <text x="165" y="366" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="15" letter-spacing="3">GRILL</text>
+  <text x="290" y="430" fill="#172033" font-family="Arial,sans-serif" font-size="40" font-weight="900">Lahore Grill House</text>
+  <text x="290" y="467" fill="#667085" font-family="Arial,sans-serif" font-size="22">Restaurant - Facebook page</text>
+  <rect x="930" y="416" width="145" height="44" rx="8" fill="#e7edf5"/>
+  <text x="1002" y="445" text-anchor="middle" fill="#344054" font-family="Arial,sans-serif" font-size="17" font-weight="700">Message</text>
+  <rect x="90" y="515" width="330" height="160" rx="14" fill="#f8fafc" stroke="#e5e7eb"/>
+  <text x="118" y="553" fill="#172033" font-family="Arial,sans-serif" font-size="24" font-weight="800">Page details</text>
+  <text x="118" y="590" fill="#667085" font-family="Arial,sans-serif" font-size="20">1,206 followers</text>
+  <text x="118" y="625" fill="#667085" font-family="Arial,sans-serif" font-size="20">Last post: 8 months ago</text>
+  <text x="118" y="660" fill="#b42318" font-family="Arial,sans-serif" font-size="20" font-weight="700">No booking link</text>
+  <rect x="455" y="515" width="630" height="160" rx="14" fill="#f8fafc" stroke="#e5e7eb"/>
+  <text x="485" y="553" fill="#172033" font-family="Arial,sans-serif" font-size="24" font-weight="800">Recent activity</text>
+  <rect x="485" y="585" width="530" height="16" rx="8" fill="#d0d5dd"/>
+  <rect x="485" y="620" width="420" height="16" rx="8" fill="#d0d5dd"/>
+  <rect x="485" y="655" width="485" height="16" rx="8" fill="#d0d5dd"/>
+  <rect x="42" y="42" width="156" height="48" rx="24" fill="#d92d20"/>
+  <text x="120" y="73" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="20" font-weight="900">BEFORE</text>
+</svg>

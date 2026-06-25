@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 72" role="img" aria-labelledby="crestTitle">
+  <title id="crestTitle">CrestGrid logo</title>
+  <rect width="240" height="72" rx="18" fill="#F8FCF8"/>
+  <path d="M45 15 67 28v20L45 61 23 48V28l22-13Z" fill="#2E7D32"/>
+  <path d="M35 36h20M45 26v20M31 47l28-22" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round"/>
+  <circle cx="63" cy="24" r="6" fill="#00BCD4"/>
+  <text x="84" y="34" fill="#162817" font-family="Inter, Arial, sans-serif" font-size="21" font-weight="800">Crest</text>
+  <text x="84" y="53" fill="#5B6F5C" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="700">Grid</text>
+</svg>

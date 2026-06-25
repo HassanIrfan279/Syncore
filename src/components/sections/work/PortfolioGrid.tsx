@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from "react";
 import dynamic from "next/dynamic";
+import Image from "next/image";
 import { ArrowUpRight, Sparkles } from "lucide-react";
 import {
   work,
@@ -87,37 +88,49 @@ export function PortfolioGrid() {
                   <div
                     className="premium-thumbnail relative aspect-[1.28] overflow-hidden"
                     role="img"
-                    aria-label={`${project.title} abstract portfolio thumbnail placeholder showing ${project.visualLabel}`}
+                    aria-label={`${project.title} portfolio thumbnail showing ${project.visualLabel}`}
                   >
-                    <div className="absolute left-6 top-6 flex size-12 items-center justify-center rounded-2xl border border-white/18 bg-white/12 text-brand-white backdrop-blur">
-                      <Sparkles aria-hidden="true" size={22} strokeWidth={2.2} />
-                    </div>
-                    <div className="absolute bottom-6 right-6 rounded-full border border-white/18 bg-white/12 px-4 py-2 font-heading text-sm font-extrabold text-brand-white backdrop-blur">
-                      0{index + 1}
-                    </div>
-                    <div
-                      className="absolute left-6 right-6 top-24 rounded-2xl border border-white/18 bg-brand-charcoal/54 p-4 shadow-2xl backdrop-blur-xl transition duration-500 group-hover:-translate-y-2"
-                      aria-hidden="true"
-                    >
-                      <div className="mb-4 flex items-center justify-between gap-4">
-                        <div className="flex gap-1.5">
-                          <span className="size-2 rounded-full bg-brand-cyan" />
-                          <span className="size-2 rounded-full bg-white/36" />
-                          <span className="size-2 rounded-full bg-brand-purple" />
+                    {project.visualSrc ? (
+                      <Image
+                        src={project.visualSrc}
+                        alt=""
+                        fill
+                        sizes="(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw"
+                        className="absolute inset-0 h-full w-full object-cover object-center"
+                      />
+                    ) : (
+                      <>
+                        <div className="absolute left-4 top-4 flex size-11 items-center justify-center rounded-2xl border border-white/18 bg-white/12 text-brand-white backdrop-blur sm:left-6 sm:top-6 sm:size-12">
+                          <Sparkles aria-hidden="true" size={22} strokeWidth={2.2} />
                         </div>
-                        <span className="h-2 w-16 rounded-full bg-white/28" />
-                      </div>
-                      <div className="grid grid-cols-[0.72fr_1fr] gap-3">
-                        <div className="rounded-xl border border-white/12 bg-white/10 p-3">
-                          <span className="block h-10 rounded-full bg-brand-cyan/75" />
+                        <div className="absolute bottom-4 right-4 rounded-full border border-white/18 bg-white/12 px-3 py-1.5 font-heading text-xs font-extrabold text-brand-white backdrop-blur sm:bottom-6 sm:right-6 sm:px-4 sm:py-2 sm:text-sm">
+                          0{index + 1}
                         </div>
-                        <div className="space-y-2">
-                          <span className="block h-2 rounded-full bg-white/64" />
-                          <span className="block h-2 w-4/5 rounded-full bg-white/30" />
-                          <span className="block h-2 w-2/3 rounded-full bg-brand-purple/80" />
+                        <div
+                          className="absolute left-6 right-6 top-24 hidden rounded-2xl border border-white/18 bg-brand-charcoal/54 p-4 shadow-2xl backdrop-blur-xl transition duration-500 group-hover:-translate-y-2 sm:block"
+                          aria-hidden="true"
+                        >
+                          <div className="mb-4 flex items-center justify-between gap-4">
+                            <div className="flex gap-1.5">
+                              <span className="size-2 rounded-full bg-brand-cyan" />
+                              <span className="size-2 rounded-full bg-white/36" />
+                              <span className="size-2 rounded-full bg-brand-purple" />
+                            </div>
+                            <span className="h-2 w-16 rounded-full bg-white/28" />
+                          </div>
+                          <div className="grid grid-cols-[0.72fr_1fr] gap-3">
+                            <div className="rounded-xl border border-white/12 bg-white/10 p-3">
+                              <span className="block h-10 rounded-full bg-brand-cyan/75" />
+                            </div>
+                            <div className="space-y-2">
+                              <span className="block h-2 rounded-full bg-white/64" />
+                              <span className="block h-2 w-4/5 rounded-full bg-white/30" />
+                              <span className="block h-2 w-2/3 rounded-full bg-brand-purple/80" />
+                            </div>
+                          </div>
                         </div>
-                      </div>
-                    </div>
+                      </>
+                    )}
                   </div>
 
                   <div className="p-6">

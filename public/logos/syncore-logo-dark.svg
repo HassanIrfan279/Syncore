@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 150" role="img" aria-label="Syncore tech and social media agency logo">
+  <g transform="translate(38 25)">
+    <path d="M46 20 16 42l10 36 34 18 32-24-4-42L46 20Z" fill="none" stroke="url(#markGradient)" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M16 42 60 96M26 78 88 30M46 20l14 76M16 42l72-12M26 78l66-6" fill="none" stroke="url(#markGradient)" stroke-width="5" stroke-linecap="round" opacity=".9"/>
+    <circle cx="46" cy="20" r="9" fill="#00BCD4"/>
+    <circle cx="16" cy="42" r="9" fill="#22C7E2"/>
+    <circle cx="26" cy="78" r="9" fill="#4F8CF5"/>
+    <circle cx="60" cy="96" r="9" fill="#8B35D6"/>
+    <circle cx="92" cy="72" r="9" fill="#B04AE2"/>
+    <circle cx="88" cy="30" r="9" fill="#5E8BFF"/>
+    <circle cx="53" cy="55" r="11" fill="#F5FBFF"/>
+  </g>
+  <text x="158" y="74" fill="url(#wordGradient)" font-family="Inter, Arial, sans-serif" font-size="45" font-weight="900" letter-spacing="1">SYNCORE</text>
+  <text x="163" y="102" fill="#F5F5F5" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="700" letter-spacing=".8">TECH &amp; SOCIAL MEDIA AGENCY</text>
+  <defs>
+    <linearGradient id="markGradient" x1="10" x2="104" y1="16" y2="98" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#00BCD4"/>
+      <stop offset=".48" stop-color="#4F8CF5"/>
+      <stop offset="1" stop-color="#B04AE2"/>
+    </linearGradient>
+    <linearGradient id="wordGradient" x1="158" x2="395" y1="48" y2="88" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#00BCD4"/>
+      <stop offset=".52" stop-color="#4F8CF5"/>
+      <stop offset="1" stop-color="#B04AE2"/>
+    </linearGradient>
+  </defs>
+</svg>

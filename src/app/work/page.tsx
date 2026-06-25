@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { BriefcaseBusiness } from "lucide-react";
-import { PortfolioGrid } from "@/components/sections/work/PortfolioGrid";
+import { WorkMediaGallery } from "@/components/sections/work/WorkMediaGallery";
 import { getPageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = getPageMetadata("work");
@@ -23,13 +23,13 @@ export default function WorkPage() {
               Our Work
             </h1>
             <p className="mt-7 max-w-2xl text-pretty text-xl leading-9 text-white/76">
-              Real projects, real results.
+              Images, videos, and campaign assets grouped by the services behind them.
             </p>
           </div>
         </div>
       </section>
 
-      <PortfolioGrid />
+      <WorkMediaGallery />
     </main>
   );
 }

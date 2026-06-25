@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Syncore team at work in restaurant</title>
+  <desc id="desc">A behind the scenes restaurant content shoot with a phone camera, lights, editing laptop and plated food.</desc>
+  <defs>
+    <linearGradient id="room" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#21130d"/><stop offset="1" stop-color="#070504"/></linearGradient>
+    <radialGradient id="light" cx=".5" cy=".4" r=".5"><stop stop-color="#ffca73"/><stop offset="1" stop-color="#5b2a12"/></radialGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#room)"/>
+  <rect x="0" y="490" width="1200" height="310" fill="#2b1a12"/>
+  <g opacity=".55"><rect x="70" y="116" width="170" height="245" rx="12" fill="#3a2518"/><rect x="290" y="82" width="220" height="275" rx="12" fill="#3a2518"/><rect x="818" y="88" width="260" height="265" rx="12" fill="#3a2518"/></g>
+  <g stroke="#f8a51d" stroke-width="7"><line x1="206" y1="0" x2="206" y2="146"/><line x1="601" y1="0" x2="601" y2="126"/><line x1="996" y1="0" x2="996" y2="146"/></g>
+  <g fill="url(#light)"><ellipse cx="206" cy="164" rx="72" ry="34"/><ellipse cx="601" cy="144" rx="82" ry="39"/><ellipse cx="996" cy="164" rx="72" ry="34"/></g>
+  <rect x="116" y="540" width="420" height="122" rx="16" fill="#6d3f24"/>
+  <ellipse cx="318" cy="547" rx="158" ry="42" fill="#8a5230"/>
+  <ellipse cx="318" cy="516" rx="142" ry="52" fill="#e8d7be"/>
+  <circle cx="270" cy="505" r="38" fill="#c84a1d"/><circle cx="330" cy="495" r="45" fill="#db6a24"/><circle cx="382" cy="520" r="36" fill="#a73518"/>
+  <rect x="625" y="493" width="285" height="178" rx="18" fill="#0f172a" stroke="#334155" stroke-width="4"/>
+  <rect x="650" y="523" width="235" height="118" rx="8" fill="#06101e"/>
+  <path d="M675 610c40-36 78 0 119-46s65 1 78-28" stroke="#28a8ff" stroke-width="6" fill="none"/>
+  <rect x="682" y="672" width="170" height="22" rx="6" fill="#475569"/>
+  <g transform="translate(505 232)">
+    <rect x="0" y="0" width="115" height="218" rx="22" fill="#111827" stroke="#94a3b8" stroke-width="4"/>
+    <rect x="13" y="25" width="89" height="165" rx="12" fill="#0b1220"/>
+    <circle cx="58" cy="202" r="7" fill="#94a3b8"/>
+    <circle cx="58" cy="110" r="52" fill="#d65b22"/><text x="58" y="104" text-anchor="middle" fill="#fff" font-family="Arial" font-size="16" font-weight="900">REEL</text><text x="58" y="126" text-anchor="middle" fill="#fff" font-family="Arial" font-size="15">SHOT</text>
+  </g>
+  <g transform="translate(400 287)">
+    <circle cx="50" cy="48" r="44" fill="#2f1d15"/><rect x="18" y="92" width="68" height="150" rx="34" fill="#111827"/><rect x="2" y="126" width="34" height="119" rx="17" fill="#1f2937"/><rect x="72" y="126" width="34" height="119" rx="17" fill="#1f2937"/>
+  </g>
+  <g transform="translate(930 304)">
+    <circle cx="50" cy="48" r="44" fill="#332018"/><rect x="14" y="92" width="74" height="160" rx="34" fill="#4338ca"/><rect x="-5" y="132" width="38" height="116" rx="17" fill="#312e81"/><rect x="72" y="132" width="38" height="116" rx="17" fill="#312e81"/>
+  </g>
+  <rect x="48" y="48" width="260" height="58" rx="29" fill="#000" opacity=".58"/>
+  <text x="178" y="85" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="22" font-weight="900">SYNCORE at work</text>
+</svg>

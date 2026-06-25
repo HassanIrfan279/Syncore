@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import {
   ArrowUpRight,
@@ -102,30 +103,35 @@ export default function AboutPage() {
         <div className="container-site">
           <div className="grid gap-8 lg:grid-cols-[0.85fr_1fr] lg:items-center">
             <div
-              className="animated-gradient-border floating-visual relative min-h-80 overflow-hidden rounded-[1.5rem] bg-brand-charcoal p-6 text-brand-white syncore-glow"
+              className="animated-gradient-border floating-visual relative min-h-[31rem] overflow-hidden rounded-[1.5rem] bg-brand-charcoal text-brand-white shadow-2xl syncore-glow sm:min-h-[36rem] lg:min-h-[40rem]"
               role="img"
               aria-label={aboutContent.founderNote.visualLabel}
             >
+              <Image
+                src="/images/about/founder-portrait.png"
+                alt=""
+                fill
+                sizes="(min-width: 1024px) 42vw, 100vw"
+                className="object-cover object-[center_35%]"
+                priority={false}
+              />
               <div
-                className="absolute inset-0 bg-[radial-gradient(circle_at_20%_18%,rgb(0_188_212/0.24),transparent_18rem),radial-gradient(circle_at_82%_72%,rgb(176_74_226/0.22),transparent_20rem),linear-gradient(rgb(255_255_255/0.05)_1px,transparent_1px),linear-gradient(90deg,rgb(255_255_255/0.05)_1px,transparent_1px)] bg-[length:auto,auto,3.5rem_3.5rem,3.5rem_3.5rem]"
+                className="absolute inset-0 bg-[linear-gradient(180deg,rgb(33_33_33/0.02),rgb(33_33_33/0.08)_48%,rgb(33_33_33/0.34)),radial-gradient(circle_at_16%_18%,rgb(0_188_212/0.16),transparent_16rem),radial-gradient(circle_at_88%_80%,rgb(176_74_226/0.18),transparent_18rem)]"
                 aria-hidden="true"
               />
 
-              <div className="relative z-10 flex h-full min-h-72 flex-col justify-between rounded-[1rem] border border-white/12 bg-white/8 p-6 backdrop-blur">
-                <Eye
-                  aria-hidden="true"
-                  className="text-brand-cyan"
-                  size={34}
-                  strokeWidth={2.2}
-                />
-                <div>
-                  <p className="font-heading text-sm font-extrabold uppercase tracking-[0.14em] text-brand-cyan">
-                    {aboutContent.founderNote.visualEyebrow}
-                  </p>
-                  <p className="mt-4 font-heading text-3xl font-extrabold leading-tight text-brand-white">
-                    {aboutContent.founderNote.visualTitle}
-                  </p>
-                </div>
+              <div className="absolute bottom-5 left-5 z-10 inline-flex items-center gap-3 rounded-2xl border border-white/16 bg-brand-charcoal/68 px-4 py-3 text-brand-white shadow-2xl backdrop-blur-md sm:bottom-6 sm:left-6">
+                <span className="flex size-10 items-center justify-center rounded-xl bg-brand-cyan text-brand-charcoal">
+                  <Eye aria-hidden="true" size={19} strokeWidth={2.3} />
+                </span>
+                <span>
+                  <span className="block font-heading text-xs font-extrabold uppercase tracking-[0.14em] text-brand-cyan">
+                    Founder
+                  </span>
+                  <span className="block font-heading text-base font-extrabold leading-tight text-brand-white">
+                    CEO
+                  </span>
+                </span>
               </div>
             </div>
 
@@ -164,14 +170,14 @@ export default function AboutPage() {
 
               <div className="flex flex-col gap-3 sm:flex-row lg:flex-col xl:flex-row">
                 <TrackedLink
-                  href={contact.calendly}
+                  href={contact.whatsapp}
                   className="btn btn-primary min-h-14 px-7 text-base"
                   target="_blank"
                   rel="noreferrer"
-                  tracking="book-call"
+                  tracking="whatsapp"
                   trackingLocation="about_cta"
                 >
-                  Book a Free Call
+                  Send Message
                   <ArrowUpRight
                     aria-hidden="true"
                     size={18}

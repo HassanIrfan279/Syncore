@@ -2,8 +2,8 @@
 
 import { FormEvent, useState } from "react";
 import { ArrowUpRight, CheckCircle2, Loader2 } from "lucide-react";
-import { trackLeadSubmit } from "@/lib/analytics";
-import { contactFormOptions } from "@/lib/site";
+import { trackLeadSubmit, trackWhatsAppClick } from "@/lib/analytics";
+import { contact, contactFormOptions } from "@/lib/site";
 
 const serviceOptions = contactFormOptions.services;
 const budgetOptions = contactFormOptions.budgetRanges;
@@ -57,6 +57,28 @@ function validateForm(values: FormValues) {
   return errors;
 }
 
+function getWhatsAppLeadUrl(values: FormValues) {
+  const messageLines = [
+    "New Syncore website enquiry",
+    "",
+    `Name: ${values.name.trim()}`,
+    `Email: ${values.email.trim()}`,
+    `WhatsApp/Phone: ${values.phone.trim()}`,
+    values.businessName.trim()
+      ? `Business: ${values.businessName.trim()}`
+      : "",
+    `Service: ${values.service}`,
+    values.budget ? `Budget: ${values.budget}` : "",
+    "",
+    "Message:",
+    values.message.trim(),
+  ].filter(Boolean);
+
+  return `${contact.whatsapp}?text=${encodeURIComponent(
+    messageLines.join("\n"),
+  )}`;
+}
+
 export function ContactForm() {
   const [values, setValues] = useState<FormValues>(initialValues);
   const [errors, setErrors] = useState<FormErrors>({});
@@ -97,41 +119,19 @@ export function ContactForm() {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch("/api/contact", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(values),
-      });
-
-      const result = (await response.json()) as {
-        ok?: boolean;
-        message?: string;
-        errors?: FormErrors;
-      };
-
-      if (!response.ok || !result.ok) {
-        setErrors(result.errors ?? {});
-        setFormError(
-          result.message ??
-            "Something went wrong. Please try again or contact us directly.",
-        );
-        setIsSubmitted(false);
-        return;
-      }
-
+      window.open(getWhatsAppLeadUrl(values), "_blank", "noopener,noreferrer");
       setIsSubmitted(true);
       trackLeadSubmit({
         service: values.service,
         budget: values.budget || undefined,
         source: "contact_page",
       });
+      trackWhatsAppClick({ location: "contact_form" });
       setValues(initialValues);
       setErrors({});
     } catch {
       setFormError(
-        "We couldn't submit the form right now. Please try again or contact us directly.",
+        "We couldn't open WhatsApp right now. Please contact us directly.",
       );
       setIsSubmitted(false);
     } finally {
@@ -153,8 +153,8 @@ export function ContactForm() {
           Thanks. Your request has been received.
         </h2>
         <p className="mt-4 leading-8">
-          We have your details and will follow up soon. The current backend is
-          ready for email, CRM, and analytics integrations.
+          WhatsApp opened with your details filled in. Send the message there
+          and we&apos;ll follow up soon.
         </p>
         <button
           type="button"
