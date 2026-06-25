@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1300" viewBox="0 0 1200 1300" role="img" aria-labelledby="title desc">
+  <title id="title">After Instagram profile screenshot mockup</title>
+  <desc id="desc">A refreshed Instagram profile mockup for Lahore Grill House showing follower count, highlights and a six post grid.</desc>
+  <defs>
+    <linearGradient id="ig" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#833ab4"/><stop offset=".5" stop-color="#fd1d1d"/><stop offset="1" stop-color="#fcb045"/></linearGradient>
+  </defs>
+  <rect width="1200" height="1300" fill="#fff"/>
+  <rect x="0" y="0" width="1200" height="88" fill="#fff" stroke="#e5e7eb"/>
+  <text x="78" y="56" fill="#111827" font-family="Arial,sans-serif" font-size="32" font-weight="900">Instagram</text>
+  <circle cx="176" cy="212" r="94" fill="#16100c" stroke="url(#ig)" stroke-width="10"/>
+  <text x="176" y="210" text-anchor="middle" fill="#fff" font-family="Georgia,serif" font-size="24" font-weight="700">LAHORE</text>
+  <text x="176" y="238" text-anchor="middle" fill="#f8a51d" font-family="Arial,sans-serif" font-size="14" letter-spacing="3">GRILL HOUSE</text>
+  <text x="325" y="153" fill="#111827" font-family="Arial,sans-serif" font-size="34" font-weight="900">lahoregrillhouse</text>
+  <rect x="654" y="121" width="138" height="46" rx="10" fill="#0095f6"/>
+  <text x="723" y="151" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="18" font-weight="800">Follow</text>
+  <g font-family="Arial,sans-serif" fill="#111827">
+    <text x="325" y="226" font-size="28" font-weight="900">48</text><text x="372" y="226" font-size="24">posts</text>
+    <text x="485" y="226" font-size="28" font-weight="900">12.4K</text><text x="575" y="226" font-size="24">followers</text>
+    <text x="735" y="226" font-size="28" font-weight="900">106</text><text x="790" y="226" font-size="24">following</text>
+  </g>
+  <text x="325" y="288" fill="#111827" font-family="Arial,sans-serif" font-size="23" font-weight="900">Lahore Grill House</text>
+  <text x="325" y="322" fill="#344054" font-family="Arial,sans-serif" font-size="21">Bold flavours, grilled fresh daily.</text>
+  <text x="325" y="354" fill="#344054" font-family="Arial,sans-serif" font-size="21">Bookings open on WhatsApp.</text>
+  <g transform="translate(86 424)">
+    <g><circle cx="56" cy="56" r="46" fill="#24140e"/><text x="56" y="63" text-anchor="middle" fill="#f8a51d" font-family="Arial" font-size="17" font-weight="900">Menu</text></g>
+    <g transform="translate(150 0)"><circle cx="56" cy="56" r="46" fill="#24140e"/><text x="56" y="63" text-anchor="middle" fill="#f8a51d" font-family="Arial" font-size="17" font-weight="900">Deals</text></g>
+    <g transform="translate(300 0)"><circle cx="56" cy="56" r="46" fill="#24140e"/><text x="56" y="63" text-anchor="middle" fill="#f8a51d" font-family="Arial" font-size="17" font-weight="900">Reels</text></g>
+    <g transform="translate(450 0)"><circle cx="56" cy="56" r="46" fill="#24140e"/><text x="56" y="63" text-anchor="middle" fill="#f8a51d" font-family="Arial" font-size="17" font-weight="900">Reviews</text></g>
+  </g>
+  <line x1="0" y1="610" x2="1200" y2="610" stroke="#e5e7eb"/>
+  <g transform="translate(0 610)">
+    <rect x="0" y="0" width="400" height="345" fill="#21120d"/><circle cx="200" cy="181" r="105" fill="#b83d18"/><text x="200" y="66" text-anchor="middle" fill="#fff" font-family="Arial" font-size="28" font-weight="900">GRILLED TO PERFECTION</text>
+    <rect x="400" y="0" width="400" height="345" fill="#140d09"/><circle cx="600" cy="179" r="112" fill="#d78b35"/><text x="600" y="66" text-anchor="middle" fill="#fff" font-family="Arial" font-size="28" font-weight="900">BOLD FLAVOURS</text>
+    <rect x="800" y="0" width="400" height="345" fill="#f8a51d"/><text x="1000" y="135" text-anchor="middle" fill="#111" font-family="Arial" font-size="58" font-weight="900">20%</text><text x="1000" y="184" text-anchor="middle" fill="#111" font-family="Arial" font-size="32" font-weight="900">WEEKEND OFF</text>
+    <rect x="0" y="345" width="400" height="345" fill="#120d09"/><text x="200" y="178" text-anchor="middle" fill="#fff" font-family="Arial" font-size="40" font-weight="900">GOOD FOOD</text><text x="200" y="226" text-anchor="middle" fill="#f8a51d" font-family="Arial" font-size="40" font-weight="900">GOOD MOOD</text>
+    <rect x="400" y="345" width="400" height="345" fill="#27160e"/><rect x="470" y="450" width="260" height="130" fill="#7b4728"/><text x="600" y="420" text-anchor="middle" fill="#fff" font-family="Arial" font-size="32" font-weight="900">RESTAURANT TOUR</text>
+    <rect x="800" y="345" width="400" height="345" fill="#150e0b"/><path d="M880 520c70-88 178-102 250-31" stroke="#f4b33c" stroke-width="54" stroke-linecap="round"/><text x="1000" y="420" text-anchor="middle" fill="#fff" font-family="Arial" font-size="32" font-weight="900">ROLL INTO HAPPINESS</text>
+  </g>
+  <rect x="42" y="42" width="130" height="48" rx="24" fill="#12b76a"/>
+  <text x="107" y="73" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="20" font-weight="900">AFTER</text>
+</svg>

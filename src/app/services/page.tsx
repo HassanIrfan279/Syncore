@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import {
   ArrowUpRight,
   Bot,
@@ -23,6 +24,7 @@ const services = [
     title: "AI AUTOMATION",
     promise: "Put your repetitive work on autopilot and never miss a lead.",
     icon: Bot,
+    image: "/images/services/ai-call-support.jpg",
     bullets: [
       "AI Call Agents: voice agents that answer, qualify & book 24/7.",
       "AI Chatbots: on-brand chat that turns visitors into customers.",
@@ -35,6 +37,7 @@ const services = [
     title: "SMART, AI-INTEGRATED WEBSITES",
     promise: "Websites that work for you, not just look good.",
     icon: Globe2,
+    image: "/images/services/web-design-workspace.jpg",
     bullets: [
       "Professional UI/UX designed around your customer's journey.",
       "Built-in AI: chat, lead capture & smart features that sell 24/7.",
@@ -47,6 +50,7 @@ const services = [
     title: "SOCIAL MEDIA MANAGEMENT",
     promise: "Turn your social media into a growth engine.",
     icon: Megaphone,
+    image: "/images/services/social-phone-management.jpg",
     bullets: [
       "Data-driven strategy mapped to your audience and goals.",
       "Scroll-stopping creatives produced in-house.",
@@ -59,6 +63,7 @@ const services = [
     title: "E-COMMERCE & PAID ADS",
     promise: "More traffic, more conversions, more revenue.",
     icon: ShoppingCart,
+    image: "/images/services/ecommerce-fulfillment.jpg",
     bullets: [
       "Google Business Profile setup & optimization.",
       "High-performance Meta (FB/IG) ad campaigns.",
@@ -71,6 +76,7 @@ const services = [
     title: "SHORT-FORM CONTENT",
     promise: "Content engineered to stop the scroll.",
     icon: Clapperboard,
+    image: "/images/services/video-editing-workspace.jpg",
     bullets: [
       "Attention-grabbing hooks and pacing.",
       "High-retention, dopamine-driven editing.",
@@ -120,16 +126,24 @@ export default function ServicesPage() {
                   />
 
                   <div
-                    className="ai-network-panel animated-gradient-border syncore-glow relative min-h-[19rem] p-4 sm:min-h-[25rem] sm:p-5"
+                    className="ai-network-panel animated-gradient-border syncore-glow relative min-h-[19rem] overflow-hidden rounded-[2rem] p-4 sm:min-h-[25rem] sm:p-5"
                     role="img"
                     aria-label={`${service.eyebrow} abstract Syncore service visual`}
                   >
-                    <div className="flex h-full min-h-[17rem] flex-col justify-between rounded-[1rem] border border-white/10 bg-brand-charcoal/74 p-5 text-brand-white shadow-2xl backdrop-blur-xl sm:min-h-[23rem] sm:p-6">
+                    <Image
+                      src={service.image}
+                      alt=""
+                      fill
+                      sizes="(min-width: 1024px) 50vw, 100vw"
+                      className="absolute inset-0 h-full w-full object-cover object-center"
+                    />
+                    <div className="absolute inset-0 bg-brand-charcoal/40" />
+                    <div className="relative z-10 flex h-full min-h-[17rem] flex-col justify-between p-6 sm:p-8">
                       <div className="flex items-start justify-between gap-4">
-                        <div className="neon-icon flex size-16 items-center justify-center rounded-3xl text-brand-cyan">
+                        <div className="neon-icon flex size-16 items-center justify-center rounded-3xl bg-white/15 text-brand-cyan shadow-[0_0_0_1px_rgba(255,255,255,0.12)] backdrop-blur-sm">
                           <Icon aria-hidden="true" size={30} strokeWidth={2.2} />
                         </div>
-                        <span className="rounded-full border border-white/12 bg-white/8 px-4 py-2 font-heading text-sm font-extrabold text-white/76">
+                        <span className="rounded-full border border-white/15 bg-white/10 px-4 py-2 font-heading text-sm font-extrabold text-white">
                           0{index + 1}
                         </span>
                       </div>
@@ -140,10 +154,10 @@ export default function ServicesPage() {
                           <span className="h-2 w-10 rounded-full bg-brand-purple" />
                           <span className="h-2 w-6 rounded-full bg-brand-indigo" />
                         </div>
-                        <p className="font-heading text-2xl font-extrabold leading-tight text-brand-white sm:text-3xl">
+                        <p className="font-heading text-2xl font-extrabold leading-tight text-white drop-shadow-[0_5px_20px_rgba(0,0,0,0.35)] sm:text-3xl">
                           {service.eyebrow}
                         </p>
-                        <p className="mt-4 max-w-sm text-base leading-8 text-white/66">
+                        <p className="mt-4 max-w-sm text-base leading-8 text-white/90">
                           Premium systems designed to attract, convert, and
                           compound.
                         </p>
@@ -177,16 +191,16 @@ export default function ServicesPage() {
                   </ul>
 
                   <TrackedLink
-                    href={contact.calendly}
+                    href={contact.whatsapp}
                     className="btn btn-primary mt-8 min-h-14 px-7 text-base"
                     target="_blank"
                     rel="noreferrer"
-                    tracking="book-call"
+                    tracking="whatsapp"
                     trackingLocation={`services_${service.eyebrow
                       .toLowerCase()
                       .replaceAll(" ", "_")}`}
                   >
-                    Book a Free Call
+                    Send Message
                     <ArrowUpRight
                       aria-hidden="true"
                       size={18}

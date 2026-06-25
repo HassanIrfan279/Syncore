@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1448" height="1078" viewBox="0 0 1448 1078" role="img" aria-labelledby="title desc">
+  <title id="title">Lahore Grill House social media analytics dashboard</title>
+  <desc id="desc">A dark blue 90 day performance dashboard showing follower growth, reach, impressions, engagement and top reel performance for Lahore Grill House.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#071121"/><stop offset="1" stop-color="#020914"/></linearGradient>
+    <linearGradient id="blue" x1="0" x2="1"><stop stop-color="#2d66ff"/><stop offset="1" stop-color="#0ad4ff"/></linearGradient>
+    <style>
+      .card{fill:#07182b;stroke:#173154;stroke-width:2}
+      .muted{fill:#9aa8bd;font:22px Arial,sans-serif}
+      .label{fill:#fff;font:700 25px Arial,sans-serif}
+      .big{fill:#fff;font:800 46px Arial,sans-serif}
+      .green{fill:#64e978;font:700 20px Arial,sans-serif}
+      .blueText{fill:#2f73ff;font:800 48px Arial,sans-serif}
+    </style>
+  </defs>
+  <rect width="1448" height="1078" rx="28" fill="url(#bg)"/>
+  <rect x="10" y="10" width="1428" height="1058" rx="28" fill="none" stroke="#16304f" stroke-width="2"/>
+  <circle cx="104" cy="102" r="61" fill="#05070b" stroke="#21335a" stroke-width="3"/>
+  <text x="104" y="104" text-anchor="middle" fill="#fff" font-family="Georgia,serif" font-weight="700" font-size="28">LAHORE</text>
+  <text x="104" y="130" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="13" letter-spacing="4">GRILL HOUSE</text>
+  <text x="198" y="80" fill="#fff" font-family="Arial,sans-serif" font-size="34" font-weight="800">Social Media Overview</text>
+  <text x="198" y="115" fill="#2d66ff" font-family="Arial,sans-serif" font-size="22" font-weight="700">90-Day Performance Summary</text>
+  <text x="198" y="149" class="muted">Apr 20 - Jul 18, 2026</text>
+  <g transform="translate(548 38)">
+    <rect class="card" width="267" height="146" rx="18"/><circle cx="70" cy="55" r="28" fill="url(#blue)"/>
+    <text x="95" y="42" class="muted">Total Followers</text><text x="95" y="82" class="big">12,400</text><text x="95" y="112" class="green">up 100%</text>
+  </g>
+  <g transform="translate(828 38)">
+    <rect class="card" width="287" height="146" rx="18"/><circle cx="70" cy="55" r="28" fill="url(#blue)"/>
+    <text x="95" y="42" class="muted">Net Follower Growth</text><text x="95" y="82" class="big">+12,400</text><text x="95" y="112" class="green">up 100%</text>
+  </g>
+  <g transform="translate(1130 38)">
+    <rect class="card" width="282" height="146" rx="18"/><circle cx="70" cy="55" r="28" fill="url(#blue)"/>
+    <text x="95" y="42" class="muted">Posts Published</text><text x="95" y="82" class="big">48</text><text x="95" y="112" class="green">up 26%</text>
+  </g>
+  <rect class="card" x="35" y="199" width="895" height="423" rx="18"/>
+  <text x="60" y="242" class="label">Follower Growth</text><text x="60" y="270" class="muted">Total followers over 90 days</text>
+  <g stroke="#1b3557" stroke-width="1">
+    <line x1="108" y1="579" x2="888" y2="579"/><line x1="108" y1="492" x2="888" y2="492"/><line x1="108" y1="405" x2="888" y2="405"/><line x1="108" y1="318" x2="888" y2="318"/>
+  </g>
+  <path d="M110 577 C160 579 172 550 213 544 S280 500 318 493 S380 444 418 437 S485 395 520 388 S580 340 628 333 S704 282 748 276 S823 237 889 222" fill="none" stroke="#2f73ff" stroke-width="5"/>
+  <path d="M110 577 C160 579 172 550 213 544 S280 500 318 493 S380 444 418 437 S485 395 520 388 S580 340 628 333 S704 282 748 276 S823 237 889 222 L889 579 L110 579z" fill="#1761ff" opacity=".32"/>
+  <circle cx="889" cy="222" r="7" fill="#fff" stroke="#2f73ff" stroke-width="4"/>
+  <rect x="107" y="291" width="98" height="97" rx="9" fill="#0a1c32" stroke="#24436a"/><text x="123" y="319" class="muted" font-size="18">Start</text><text x="123" y="351" class="big" font-size="32">0</text>
+  <rect x="782" y="231" width="116" height="99" rx="9" fill="#0a1c32" stroke="#24436a"/><text x="797" y="258" class="muted" font-size="18">End</text><text x="797" y="292" class="big" font-size="32">12,400</text>
+  <text x="620" y="349" fill="#fff" font-family="Georgia,serif" font-size="22" font-style="italic">Consistent growth</text>
+  <rect class="card" x="945" y="199" width="467" height="413" rx="18"/>
+  <text x="1024" y="244" class="label">Top Performing Reel</text>
+  <rect x="969" y="273" width="198" height="259" rx="8" fill="#35160d"/>
+  <path d="M989 436c60-77 120-91 166-15" stroke="#f4a13c" stroke-width="48" stroke-linecap="round"/>
+  <text x="1068" y="396" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="31" font-weight="900">FLAVOUR</text>
+  <text x="1068" y="430" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="24" font-weight="800">THAT STAYS</text>
+  <text x="1187" y="299" class="label">Flavour That Stays</text><text x="1187" y="322" class="muted" font-size="18">Jun 10, 2026</text>
+  <text x="1187" y="452" class="big" font-size="56">2.3M</text><text x="1187" y="492" class="muted">Views</text>
+  <text x="1187" y="520" class="label">48.7K</text><text x="1302" y="520" class="label">1.2K</text>
+  <g transform="translate(35 636)">
+    <rect class="card" width="298" height="167" rx="14"/><text x="92" y="38" class="muted">Reach</text><text x="92" y="76" class="big">1.82M</text><text x="92" y="103" class="green">up 145%</text><path d="M88 145c65-20 118 10 191-35" stroke="#2f73ff" stroke-width="3" fill="none"/>
+  </g>
+  <g transform="translate(342 636)">
+    <rect class="card" width="280" height="167" rx="14"/><text x="86" y="38" class="muted">Impressions</text><text x="86" y="76" class="big">3.76M</text><text x="86" y="103" class="green">up 156%</text><path d="M80 145c65-25 118 8 181-42" stroke="#2f73ff" stroke-width="3" fill="none"/>
+  </g>
+  <g transform="translate(631 636)">
+    <rect class="card" width="299" height="167" rx="14"/><text x="92" y="38" class="muted">Profile Visits</text><text x="92" y="76" class="big">28.9K</text><text x="92" y="103" class="green">up 98%</text><path d="M88 145c61-24 124 12 191-38" stroke="#2f73ff" stroke-width="3" fill="none"/>
+  </g>
+  <rect class="card" x="945" y="625" width="467" height="178" rx="18"/>
+  <text x="970" y="662" class="label">Engagement Rate</text><text x="970" y="725" class="blueText">6.24%</text><text x="1095" y="718" class="green">up 2.35%</text>
+  <circle cx="1295" cy="713" r="58" fill="none" stroke="#19365d" stroke-width="16"/><path d="M1295 655a58 58 0 1 1-44 96" fill="none" stroke="url(#blue)" stroke-width="16" stroke-linecap="round"/>
+  <rect class="card" x="35" y="816" width="700" height="221" rx="18"/><text x="60" y="854" class="label">Audience Breakdown</text>
+  <text x="60" y="889" class="muted">Top Countries</text><text x="60" y="919" class="label" font-size="20">Pakistan</text><text x="277" y="919" class="muted">87.6%</text>
+  <text x="60" y="951" class="label" font-size="20">United Arab Emirates</text><text x="277" y="951" class="muted">4.8%</text>
+  <circle cx="482" cy="944" r="66" fill="none" stroke="#2f73ff" stroke-width="34"/><path d="M482 878a66 66 0 0 1 58 98" fill="none" stroke="#27c5ff" stroke-width="34"/>
+  <rect class="card" x="745" y="816" width="667" height="221" rx="18"/><text x="770" y="854" class="label">Content Type Performance</text>
+  <g transform="translate(770 886)" font-family="Arial,sans-serif" font-size="20" fill="#d8e2f1">
+    <text y="0">Reels</text><rect x="140" y="-11" width="413" height="8" fill="#183150"/><rect x="140" y="-11" width="195" height="8" fill="url(#blue)"/><text x="575" y="0">62.7%</text>
+    <text y="38">Posts</text><rect x="140" y="27" width="413" height="8" fill="#183150"/><rect x="140" y="27" width="130" height="8" fill="url(#blue)"/><text x="575" y="38">23.4%</text>
+    <text y="76">Stories</text><rect x="140" y="65" width="413" height="8" fill="#183150"/><rect x="140" y="65" width="67" height="8" fill="url(#blue)"/><text x="575" y="76">11.6%</text>
+  </g>
+  <text x="1230" y="1060" fill="#446bd8" font-family="Georgia,serif" font-size="20" font-style="italic">Sample dashboard - representative data.</text>
+</svg>

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200" role="img" aria-labelledby="title desc">
+  <title id="title">Lahore Grill House four post content samples</title>
+  <desc id="desc">A two by two grid of best performing branded posts with views, likes and comments.</desc>
+  <defs>
+    <radialGradient id="food" cx=".5" cy=".45" r=".55"><stop stop-color="#f6a23a"/><stop offset=".55" stop-color="#9d3319"/><stop offset="1" stop-color="#170907"/></radialGradient>
+    <style>.metric{font:800 24px Arial,sans-serif;fill:#fff}.brand{font:700 31px Georgia,serif;fill:#fff;letter-spacing:2px}.sub{font:700 15px Arial,sans-serif;fill:#fff;letter-spacing:3px}.headline{font:900 46px Arial,sans-serif;fill:#fff}.script{font:italic 54px Georgia,serif;fill:#f8a51d}</style>
+  </defs>
+  <rect width="1200" height="1200" fill="#080503"/>
+  <g transform="translate(0 0)">
+    <rect width="600" height="600" fill="#140b08" stroke="#fff" stroke-width="6"/>
+    <circle cx="300" cy="325" r="178" fill="url(#food)"/><circle cx="245" cy="290" r="52" fill="#d34c1e"/><circle cx="350" cy="285" r="62" fill="#bd3818"/>
+    <text x="300" y="112" text-anchor="middle" class="script">Grilled to</text><text x="300" y="165" text-anchor="middle" class="headline">PERFECTION</text>
+    <text x="300" y="505" text-anchor="middle" class="brand">LAHORE</text><text x="300" y="531" text-anchor="middle" class="sub">GRILL HOUSE</text>
+    <rect x="24" y="24" width="178" height="42" rx="21" fill="#000" opacity=".65"/><text x="113" y="53" text-anchor="middle" class="metric">2.3M views</text>
+  </g>
+  <g transform="translate(600 0)">
+    <rect width="600" height="600" fill="#f8a51d" stroke="#fff" stroke-width="6"/>
+    <text x="300" y="170" text-anchor="middle" fill="#111" font-family="Arial" font-size="76" font-weight="900">WEEKEND</text><text x="300" y="245" text-anchor="middle" fill="#111" font-family="Georgia" font-size="72" font-style="italic">Special</text>
+    <text x="300" y="372" text-anchor="middle" fill="#111" font-family="Arial" font-size="126" font-weight="900">20%</text><text x="300" y="430" text-anchor="middle" fill="#111" font-family="Arial" font-size="34" font-weight="900">OFF ON ALL ORDERS</text>
+    <rect x="24" y="24" width="178" height="42" rx="21" fill="#000" opacity=".65"/><text x="113" y="53" text-anchor="middle" class="metric">486K reach</text>
+  </g>
+  <g transform="translate(0 600)">
+    <rect width="600" height="600" fill="#120d09" stroke="#fff" stroke-width="6"/>
+    <text x="300" y="215" text-anchor="middle" class="headline">GOOD FOOD</text><text x="300" y="285" text-anchor="middle" class="headline" fill="#f8a51d">GOOD MOOD</text><text x="300" y="355" text-anchor="middle" class="headline">GREAT MEMORIES</text>
+    <text x="300" y="505" text-anchor="middle" class="brand">LAHORE</text><text x="300" y="531" text-anchor="middle" class="sub">GRILL HOUSE</text>
+    <rect x="24" y="24" width="178" height="42" rx="21" fill="#000" opacity=".65"/><text x="113" y="53" text-anchor="middle" class="metric">92K likes</text>
+  </g>
+  <g transform="translate(600 600)">
+    <rect width="600" height="600" fill="#160c08" stroke="#fff" stroke-width="6"/>
+    <path d="M120 355c118-168 300-190 430-76-86 157-260 196-430 76z" fill="#e8cca1"/>
+    <path d="M170 340c108-92 235-111 335-49" stroke="#7b351f" stroke-width="45" stroke-linecap="round"/>
+    <text x="300" y="145" text-anchor="middle" class="headline">ROLL INTO</text><text x="300" y="207" text-anchor="middle" class="script">Happiness</text>
+    <text x="300" y="505" text-anchor="middle" class="brand">LAHORE</text><text x="300" y="531" text-anchor="middle" class="sub">GRILL HOUSE</text>
+    <rect x="24" y="24" width="210" height="42" rx="21" fill="#000" opacity=".65"/><text x="129" y="53" text-anchor="middle" class="metric">14.8K saves</text>
+  </g>
+</svg>

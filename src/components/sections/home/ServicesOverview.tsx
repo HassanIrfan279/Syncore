@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import {
   ArrowUpRight,
   Bot,
@@ -16,6 +17,14 @@ const serviceIcons: Record<string, LucideIcon> = {
   "social-media-mgmt": Megaphone,
   "e-commerce-and-ads": ShoppingCart,
   "short-form-content": Clapperboard,
+};
+
+const serviceImages: Record<string, string> = {
+  "ai-automation": "/images/services/ai-call-support.jpg",
+  "smart-ai-websites": "/images/services/web-design-workspace.jpg",
+  "social-media-mgmt": "/images/services/social-phone-management.jpg",
+  "e-commerce-and-ads": "/images/services/ecommerce-fulfillment.jpg",
+  "short-form-content": "/images/services/video-editing-workspace.jpg",
 };
 
 export function ServicesOverview() {
@@ -41,31 +50,46 @@ export function ServicesOverview() {
             return (
               <article
                 key={service.title}
-                className="card card-gradient spotlight-card tilt-card group flex min-h-72 flex-col p-6"
+                className="home-dark-card card card-gradient spotlight-card tilt-card group flex min-h-[24rem] flex-col overflow-hidden"
               >
-                <div className="neon-icon flex size-14 items-center justify-center rounded-2xl text-brand-cyan transition duration-300 group-hover:-translate-y-1 group-hover:text-brand-white">
-                  <Icon aria-hidden="true" size={24} strokeWidth={2.2} />
+                <div className="relative aspect-[1.38] overflow-hidden">
+                  <Image
+                    src={serviceImages[service.id]}
+                    alt=""
+                    fill
+                    sizes="(min-width: 1280px) 20vw, (min-width: 768px) 50vw, 100vw"
+                    className="object-cover transition duration-500 group-hover:scale-105"
+                  />
+                  <div
+                    className="absolute inset-0 bg-gradient-to-t from-brand-charcoal via-brand-charcoal/45 to-transparent"
+                    aria-hidden="true"
+                  />
+                  <div className="neon-icon absolute left-5 top-5 flex size-14 items-center justify-center rounded-2xl text-brand-cyan transition duration-300 group-hover:-translate-y-1 group-hover:text-brand-white">
+                    <Icon aria-hidden="true" size={24} strokeWidth={2.2} />
+                  </div>
                 </div>
 
-                <h3 className="mt-7 text-2xl">{service.title}</h3>
+                <div className="flex flex-1 flex-col p-6">
+                  <h3 className="text-2xl text-brand-white">{service.title}</h3>
 
-                <p className="mt-4 text-base leading-8">
-                  {service.homeBenefit}
-                </p>
+                  <p className="mt-4 text-base leading-8 text-white/70">
+                    {service.homeBenefit}
+                  </p>
 
-                <div
-                  className="mt-6 h-1 w-16 rounded-full bg-brand-gradient opacity-60 transition duration-300 group-hover:w-24 group-hover:opacity-100"
-                  aria-hidden="true"
-                />
+                  <div
+                    className="mt-6 h-1 w-16 rounded-full bg-brand-gradient opacity-60 transition duration-300 group-hover:w-24 group-hover:opacity-100"
+                    aria-hidden="true"
+                  />
 
-                <Link
-                  href={service.href}
-                  className="mt-auto inline-flex items-center gap-2 pt-8 text-sm font-extrabold text-brand-indigo transition hover:gap-3 hover:text-brand-purple"
-                  aria-label={`Learn more about ${service.title}`}
-                >
-                  Learn more
-                  <ArrowUpRight aria-hidden="true" size={17} strokeWidth={2.4} />
-                </Link>
+                  <Link
+                    href={service.href}
+                    className="mt-auto inline-flex items-center gap-2 pt-8 text-sm font-extrabold text-brand-cyan transition hover:gap-3 hover:text-brand-purple"
+                    aria-label={`Learn more about ${service.title}`}
+                  >
+                    Learn more
+                    <ArrowUpRight aria-hidden="true" size={17} strokeWidth={2.4} />
+                  </Link>
+                </div>
               </article>
             );
           })}

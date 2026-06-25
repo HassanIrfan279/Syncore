@@ -1,8 +1,9 @@
 type AnalyticsValue = string | number | boolean | null | undefined;
 type AnalyticsPayload = Record<string, AnalyticsValue>;
 
-// TODO: Add NEXT_PUBLIC_GA_MEASUREMENT_ID=G-XXXXXXXXXX to the production env.
-// TODO: Add NEXT_PUBLIC_META_PIXEL_ID=000000000000000 to the production env.
+// Optional production env vars:
+// NEXT_PUBLIC_GA_MEASUREMENT_ID=G-XXXXXXXXXX
+// NEXT_PUBLIC_META_PIXEL_ID=000000000000000
 const gaMeasurementId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
 const metaPixelId = process.env.NEXT_PUBLIC_META_PIXEL_ID;
 
@@ -59,10 +60,6 @@ export function trackLeadSubmit(payload: AnalyticsPayload = {}) {
     lead_type: "contact_form",
     ...payload,
   });
-}
-
-export function trackBookCallClick(payload: AnalyticsPayload = {}) {
-  trackEvent("book_call_click", payload);
 }
 
 export function trackWhatsAppClick(payload: AnalyticsPayload = {}) {

@@ -1,5 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Syncore favicon placeholder">
-  <rect width="64" height="64" rx="16" fill="#212121"/>
-  <path d="M18 40c4.6 5 18.8 6.2 25.2.8 5.2-4.4 2.5-11.2-5-13.1l-9.1-2.3c-3.4-.9-4.4-3.5-2.2-5.3 3-2.5 10.5-1.6 14.4 2.2" fill="none" stroke="#00BCD4" stroke-width="5" stroke-linecap="round"/>
-  <path d="M18.8 40.6c4.9 3.9 16.5 4.9 22.2.1 4.9-4.1 2.3-10.1-4.3-11.8l-8.2-2.1c-3.4-.9-4.4-3.5-2.2-5.3 3-2.5 10.5-1.6 14.4 2.2" fill="none" stroke="#B04AE2" stroke-width="2.5" stroke-linecap="round"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Syncore icon">
+  <rect width="64" height="64" rx="14" fill="#171717"/>
+  <path d="M30 12 12 25l6 22 20 10 18-14-3-24L30 12Z" fill="none" stroke="url(#markGradient)" stroke-width="5.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M12 25 38 57M18 47l35-28M30 12l8 45M12 25l41-6M18 47l38-4" fill="none" stroke="url(#markGradient)" stroke-width="3" stroke-linecap="round" opacity=".9"/>
+  <circle cx="30" cy="12" r="5" fill="#00BCD4"/>
+  <circle cx="12" cy="25" r="5" fill="#22C7E2"/>
+  <circle cx="18" cy="47" r="5" fill="#4F8CF5"/>
+  <circle cx="38" cy="57" r="5" fill="#8B35D6"/>
+  <circle cx="56" cy="43" r="5" fill="#B04AE2"/>
+  <circle cx="53" cy="19" r="5" fill="#5E8BFF"/>
+  <circle cx="34" cy="33" r="6" fill="#F5FBFF"/>
+  <defs>
+    <linearGradient id="markGradient" x1="9" x2="58" y1="10" y2="58" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#00BCD4"/>
+      <stop offset=".48" stop-color="#4F8CF5"/>
+      <stop offset="1" stop-color="#B04AE2"/>
+    </linearGradient>
+  </defs>
 </svg>

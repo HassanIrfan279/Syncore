@@ -1,13 +1,12 @@
 import type { Metadata } from "next";
 import { Inter, Sora } from "next/font/google";
 import type { ReactNode } from "react";
-import { AIChatWidget } from "@/components/AIChatWidget";
 import { AnalyticsScripts } from "@/components/AnalyticsScripts";
 import { FloatingWhatsAppButton } from "@/components/FloatingWhatsAppButton";
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
 import { StructuredData } from "@/components/StructuredData";
-import { brand, defaultOgImage, seo, siteUrl } from "@/lib/site";
+import { brand, business, defaultOgImage, seo, siteUrl } from "@/lib/site";
 import "./globals.css";
 
 const inter = Inter({
@@ -45,7 +44,7 @@ export const metadata: Metadata = {
     description: seo.home.description,
     url: "/",
     siteName: brand.name,
-    locale: "en_US",
+    locale: business.locale,
     type: "website",
     images: [
       {
@@ -78,7 +77,6 @@ export default function RootLayout({
         {children}
         <Footer />
         <FloatingWhatsAppButton />
-        <AIChatWidget />
       </body>
     </html>
   );

@@ -39,7 +39,7 @@ export function WhyUs() {
             return (
               <article
                 key={reason.title}
-                className="spotlight-card tilt-card group relative overflow-hidden rounded-[1.25rem] border border-brand-border bg-brand-white p-6 shadow-card transition duration-300 hover:-translate-y-2 hover:border-brand-cyan/60 hover:shadow-card-hover"
+                className="home-dark-card spotlight-card tilt-card group relative overflow-hidden rounded-[1.25rem] border border-brand-border p-6 shadow-card transition duration-300 hover:-translate-y-2 hover:border-brand-cyan/60 hover:shadow-card-hover"
               >
                 <div
                   className="absolute right-0 top-0 h-28 w-28 translate-x-10 -translate-y-10 rounded-full bg-brand-gradient opacity-10 blur-xl transition group-hover:opacity-20"
@@ -51,7 +51,7 @@ export function WhyUs() {
                     <div className="neon-icon flex size-14 items-center justify-center rounded-2xl text-brand-cyan transition duration-300 group-hover:-translate-y-1 group-hover:text-brand-white">
                       <Icon aria-hidden="true" size={24} strokeWidth={2.2} />
                     </div>
-                    <span className="font-heading text-sm font-extrabold text-brand-border">
+                    <span className="font-heading text-sm font-extrabold text-white/30">
                       0{index + 1}
                     </span>
                   </div>

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { trustStrip } from "@/lib/site";
 
 export function TrustStrip() {
@@ -10,17 +11,19 @@ export function TrustStrip() {
           </p>
 
           <div className="grid w-full grid-cols-2 gap-3 sm:grid-cols-3 lg:w-auto lg:grid-cols-6">
-            {trustStrip.logoPlaceholders.map((label) => (
+            {trustStrip.logos.map((logo) => (
               <div
-                key={label}
-                className="group flex min-h-14 items-center justify-center gap-3 rounded-full border border-brand-border bg-brand-surface px-5 text-sm font-bold text-brand-muted transition duration-300 hover:-translate-y-1 hover:border-brand-cyan/60 hover:bg-brand-white hover:text-brand-charcoal hover:shadow-[0_1rem_2.5rem_rgb(33_33_33/7%)]"
-                aria-label={label}
+                key={logo.label}
+                className="group flex min-h-16 items-center justify-center rounded-2xl border border-brand-border bg-brand-surface px-3 py-2 transition duration-300 hover:-translate-y-1 hover:border-brand-cyan/60 hover:bg-brand-white hover:shadow-[0_1rem_2.5rem_rgb(33_33_33/7%)]"
+                aria-label={logo.label}
               >
-                <span
-                  className="size-2.5 rounded-full bg-brand-gradient opacity-65 transition group-hover:opacity-100"
-                  aria-hidden="true"
+                <Image
+                  src={logo.src}
+                  alt={logo.alt}
+                  width={150}
+                  height={45}
+                  className="h-10 w-auto object-contain"
                 />
-                {label}
               </div>
             ))}
           </div>

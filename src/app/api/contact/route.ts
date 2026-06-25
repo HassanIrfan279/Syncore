@@ -96,10 +96,8 @@ export async function POST(request: Request) {
     });
   }
 
-  // TODO: Send lead notification through the selected email provider.
-  // Keep provider keys in environment variables, for example EMAIL_API_KEY.
-  // TODO: Store this lead in Google Sheets, a CRM, or both.
-  // TODO: Track a contact_form_submitted analytics event after delivery.
+  // The visible contact form currently sends users to WhatsApp. This endpoint
+  // remains as a validated server route for a future email or CRM integration.
 
   return NextResponse.json({
     ok: true,

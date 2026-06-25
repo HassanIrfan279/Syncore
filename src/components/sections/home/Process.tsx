@@ -51,7 +51,7 @@ export function Process() {
                     <Icon aria-hidden="true" size={22} strokeWidth={2.2} />
                   </div>
 
-                  <div className="card spotlight-card tilt-card group-hover:border-brand-cyan/60 p-6">
+                  <div className="home-dark-card card spotlight-card tilt-card group-hover:border-brand-cyan/60 p-6">
                     <span className="font-heading text-sm font-extrabold text-brand-cyan">
                       0{index + 1}
                     </span>

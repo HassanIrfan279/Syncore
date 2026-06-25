@@ -2,8 +2,8 @@
 
 import { useEffect, useRef } from "react";
 import Link from "next/link";
-import { ArrowUpRight, X } from "lucide-react";
-import { trackBookCallClick } from "@/lib/analytics";
+import { ArrowUpRight, MessageCircle, X } from "lucide-react";
+import { trackWhatsAppClick } from "@/lib/analytics";
 import { contact, navigationLinks, services, socialLinks } from "@/lib/site";
 
 type MobileMenuProps = {
@@ -12,6 +12,7 @@ type MobileMenuProps = {
 };
 
 const headerLinks = navigationLinks.filter((link) => link.label !== "Home");
+const visibleSocialLinks = socialLinks.filter((link) => !link.isPlaceholder);
 
 export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
   const panelRef = useRef<HTMLDivElement>(null);
@@ -127,17 +128,17 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
         </nav>
 
         <Link
-          href={contact.calendly}
+          href={contact.whatsapp}
           onClick={() => {
-            trackBookCallClick({ location: "mobile_menu" });
+            trackWhatsAppClick({ location: "mobile_menu" });
             onClose();
           }}
           className="btn btn-primary mt-10 min-h-14 w-full"
           target="_blank"
           rel="noreferrer"
         >
-          Book a Free Call
-          <ArrowUpRight aria-hidden="true" size={18} strokeWidth={2.4} />
+          Send Message
+          <MessageCircle aria-hidden="true" size={18} strokeWidth={2.4} />
         </Link>
 
         <div className="mt-10 grid gap-6 border-t border-white/10 pt-8">
@@ -159,21 +160,13 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
             </div>
           </div>
 
-          <div>
-            <p className="font-heading text-sm font-bold uppercase tracking-[0.14em] text-brand-cyan">
-              Social
-            </p>
-            <div className="mt-4 flex flex-wrap gap-4">
-              {socialLinks.map((link) =>
-                link.isPlaceholder ? (
-                  <span
-                    key={link.label}
-                    className="inline-flex min-h-11 items-center text-sm font-bold text-white/52"
-                    aria-label={`${link.label} social link placeholder`}
-                  >
-                    {link.label}
-                  </span>
-                ) : (
+          {visibleSocialLinks.length > 0 ? (
+            <div>
+              <p className="font-heading text-sm font-bold uppercase tracking-[0.14em] text-brand-cyan">
+                Social
+              </p>
+              <div className="mt-4 flex flex-wrap gap-4">
+                {visibleSocialLinks.map((link) => (
                   <Link
                     key={link.href}
                     href={link.href}
@@ -184,10 +177,10 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
                   >
                     {link.label}
                   </Link>
-                ),
-              )}
+                ))}
+              </div>
             </div>
-          </div>
+          ) : null}
         </div>
       </div>
     </div>

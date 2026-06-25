@@ -1,10 +1,11 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
-import { ArrowUpRight, Menu } from "lucide-react";
-import { trackBookCallClick } from "@/lib/analytics";
-import { brand, contact, navigationLinks } from "@/lib/site";
+import { Menu, MessageCircle } from "lucide-react";
+import { trackWhatsAppClick } from "@/lib/analytics";
+import { contact, navigationLinks } from "@/lib/site";
 import { MobileMenu } from "@/components/layout/MobileMenu";
 
 const headerLinks = navigationLinks.filter((link) => link.label !== "Home");
@@ -65,15 +66,17 @@ export function Header() {
         <div className="container-site flex items-center justify-between gap-5">
           <Link
             href="/"
-            className="group inline-flex min-h-11 items-center gap-3 text-brand-white"
+            className="group inline-flex min-h-11 items-center text-brand-white"
             aria-label="Syncore home"
           >
-            <span className="flex size-10 items-center justify-center rounded-xl bg-brand-gradient text-sm font-black text-brand-white shadow-[0_1rem_2.25rem_rgb(0_188_212/20%)]">
-              S
-            </span>
-            <span className="font-heading text-2xl font-extrabold tracking-normal">
-              {brand.name}
-            </span>
+            <Image
+              src="/logos/syncore-logo-dark.svg"
+              alt="Syncore"
+              width={350}
+              height={100}
+              priority
+              className="h-auto w-[13.75rem] object-contain sm:w-[17.5rem] lg:w-[20rem]"
+            />
           </Link>
 
           <nav
@@ -93,14 +96,14 @@ export function Header() {
 
           <div className="hidden items-center gap-3 lg:flex">
             <Link
-              href={contact.calendly}
+              href={contact.whatsapp}
               className="btn btn-primary min-h-12 px-5"
               target="_blank"
               rel="noreferrer"
-              onClick={() => trackBookCallClick({ location: "header" })}
+              onClick={() => trackWhatsAppClick({ location: "header" })}
             >
-              Book a Free Call
-              <ArrowUpRight aria-hidden="true" size={17} strokeWidth={2.5} />
+              Send Message
+              <MessageCircle aria-hidden="true" size={17} strokeWidth={2.5} />
             </Link>
           </div>
 

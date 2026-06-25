@@ -12,7 +12,9 @@ function serializeSchema(schema: object) {
 }
 
 export function StructuredData() {
-  const sameAs = socialLinks.map((link) => link.href);
+  const sameAs = socialLinks
+    .filter((link) => !link.isPlaceholder)
+    .map((link) => link.href);
 
   const organizationSchema = {
     "@context": "https://schema.org",
@@ -25,7 +27,7 @@ export function StructuredData() {
     image: absoluteUrl(business.image),
     description: business.description,
     email: contact.email,
-    sameAs,
+    ...(sameAs.length > 0 ? { sameAs } : {}),
     contactPoint: [
       {
         "@type": "ContactPoint",
@@ -50,15 +52,19 @@ export function StructuredData() {
     email: contact.email,
     telephone: contact.phone,
     priceRange: business.priceRange,
-    address: {
-      "@type": "PostalAddress",
-      ...business.address,
-    },
+    ...(business.address
+      ? {
+          address: {
+            "@type": "PostalAddress",
+            ...business.address,
+          },
+        }
+      : {}),
     areaServed: {
       "@type": "Country",
       name: business.areaServed,
     },
-    sameAs,
+    ...(sameAs.length > 0 ? { sameAs } : {}),
     makesOffer: services.map((service) => ({
       "@type": "Offer",
       itemOffered: {

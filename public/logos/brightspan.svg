@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 72" role="img" aria-labelledby="brightTitle">
+  <title id="brightTitle">BrightSpan logo</title>
+  <rect width="240" height="72" rx="18" fill="#FBF8FF"/>
+  <path d="M31 52 49 16h16L47 52H31Z" fill="#6A1B9A"/>
+  <path d="M51 52 69 16h15L66 52H51Z" fill="#B04AE2"/>
+  <circle cx="34" cy="20" r="6" fill="#00BCD4"/>
+  <text x="96" y="34" fill="#21152B" font-family="Inter, Arial, sans-serif" font-size="21" font-weight="800">Bright</text>
+  <text x="96" y="53" fill="#6A5875" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="700">Span</text>
+</svg>

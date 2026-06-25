@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 72" role="img" aria-labelledby="verveTitle">
+  <title id="verveTitle">VerveLabs logo</title>
+  <rect width="240" height="72" rx="18" fill="#F8FAFF"/>
+  <rect x="25" y="19" width="36" height="36" rx="11" fill="#212121"/>
+  <path d="M34 38 41 29l7 14 7-10" fill="none" stroke="#00BCD4" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="58" cy="19" r="6" fill="#B04AE2"/>
+  <text x="82" y="34" fill="#171B2A" font-family="Inter, Arial, sans-serif" font-size="21" font-weight="800">Verve</text>
+  <text x="82" y="53" fill="#5B6573" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="700">Labs</text>
+</svg>

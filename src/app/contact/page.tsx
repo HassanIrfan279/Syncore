@@ -2,20 +2,16 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import {
   ArrowUpRight,
-  CalendarDays,
   Mail,
   MessageCircle,
   Send,
 } from "lucide-react";
-import { LazyCalendlyFrame } from "@/components/LazyCalendlyFrame";
 import { ContactForm } from "@/components/sections/contact/ContactForm";
 import { TrackedLink } from "@/components/TrackedLink";
 import { getPageMetadata } from "@/lib/seo";
 import { contact } from "@/lib/site";
 
 export const metadata: Metadata = getPageMetadata("contact");
-
-const hasCalendlyUrl = Boolean(contact.calendly.trim());
 
 export default function ContactPage() {
   return (
@@ -100,42 +96,34 @@ export default function ContactPage() {
 
               <div className="relative z-10">
                 <div className="flex size-12 items-center justify-center rounded-2xl bg-brand-charcoal text-brand-cyan">
-                  <CalendarDays
+                  <MessageCircle
                     aria-hidden="true"
                     size={23}
                     strokeWidth={2.3}
                   />
                 </div>
                 <h2 className="mt-6 font-heading text-2xl font-extrabold text-brand-charcoal">
-                  Calendly
+                  Send a message
                 </h2>
-
-                {hasCalendlyUrl ? (
-                  <>
-                    <LazyCalendlyFrame url={contact.calendly} />
-                    <TrackedLink
-                      href={contact.calendly}
-                      className="btn btn-secondary mt-5 w-full"
-                      target="_blank"
-                      rel="noreferrer"
-                      tracking="book-call"
-                      trackingLocation="contact_calendly_card"
-                    >
-                      Open Calendly
-                      <ArrowUpRight
-                        aria-hidden="true"
-                        size={17}
-                        strokeWidth={2.4}
-                      />
-                    </TrackedLink>
-                  </>
-                ) : (
-                  <div className="mt-5 rounded-2xl border border-dashed border-brand-border bg-brand-surface p-6 text-center">
-                    <p className="font-heading text-lg font-extrabold text-brand-charcoal">
-                      Calendly link goes here
-                    </p>
-                  </div>
-                )}
+                <p className="mt-4 leading-8 text-brand-muted">
+                  Prefer a direct conversation? Message Syncore on WhatsApp and
+                  we&apos;ll continue from there.
+                </p>
+                <TrackedLink
+                  href={contact.whatsapp}
+                  className="btn btn-secondary mt-5 w-full"
+                  target="_blank"
+                  rel="noreferrer"
+                  tracking="whatsapp"
+                  trackingLocation="contact_message_card"
+                >
+                  Open WhatsApp
+                  <ArrowUpRight
+                    aria-hidden="true"
+                    size={17}
+                    strokeWidth={2.4}
+                  />
+                </TrackedLink>
               </div>
             </div>
           </aside>
